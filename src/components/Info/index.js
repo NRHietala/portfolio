@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -9,7 +9,6 @@ import {
   TopLine,
   Heading,
   Subtitle,
-  BtnWrap,
   Column2,
   ImgWrap,
   Img,
@@ -25,12 +24,8 @@ const Info = props => {
     headline,
     darkText,
     description,
-    buttonLabel,
     img,
     alt,
-    primary,
-    dark,
-    dark2,
   } = props;
   return (
     <>
@@ -42,23 +37,6 @@ const Info = props => {
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                {buttonLabel ? (
-                  <BtnWrap>
-                    <Button
-                      to="home"
-                      smooth={true}
-                      duration={500}
-                      spy={true}
-                      exact="true"
-                      offset={-80}
-                      primary={primary ? 1 : 0}
-                      dark={dark ? 1 : 0}
-                      dark2={dark2 ? 1 : 0}
-                    >
-                      {buttonLabel}
-                    </Button>
-                  </BtnWrap>
-                ) : null}
               </TextWrapper>
             </Column1>
             <Column2>
