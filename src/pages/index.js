@@ -5,8 +5,8 @@ import HeroSection from "../components/Hero";
 import Info from "../components/Info";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
+import About from "../components/About";
 import {
-  aboutMe,
   HomeObjTwo,
   // HomeObjThree,
   HomeObjFour,
@@ -23,7 +23,7 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggleMenu={toggleMenu} />
       <Navbar toggleMenu={toggleMenu} />
       <HeroSection />
-      <Info {...aboutMe} />
+      <About />
       <Info {...HomeObjTwo} />
       <Services />
       {/* new component about skills */}

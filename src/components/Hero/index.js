@@ -28,7 +28,7 @@ const Hero = () => {
         <TypeWrap>
           <TypeWriterEffect
             textStyle={{
-              color: "#d20000",
+              color: "#ef0195",
               fontWeight: 400,
               fontSize: "1.2em",
               textAlign: "center",
