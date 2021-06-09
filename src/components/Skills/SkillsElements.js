@@ -43,4 +43,6 @@ export const CardContainer = styled.div``;
 
 export const CardWrapper = styled.div``;
 
-export const Title = styled.h3``;
+export const Title = styled.h3`
+  background: orange;
+`;
