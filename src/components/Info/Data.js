@@ -1,20 +1,3 @@
-export const aboutMe = {
-  id: "about",
-  lightBg: false,
-  lightText: true,
-  LightTextDesc: true,
-  topLine: "WhoamI?",
-  headline: "Nathan Hietala",
-  description:
-    "Hello and welcome. I'm a full stack web developer with a passion for learning new things and finding creative ways to solve real world problems with code!",
-  imgStart: false,
-  img: require("../../assets/images/tinypic.jpg").default,
-  alt: "headshot",
-  dark: true,
-  primary: true,
-  darkText: false,
-};
-
 export const HomeObjTwo = {
   id: "skills",
   lightBg: true,

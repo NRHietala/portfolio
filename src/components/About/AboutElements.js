@@ -13,12 +13,12 @@ export const InfoWrapper = styled.div`
   display: grid;
   justify-content: center;
   z-index: 1;
-  height: 860px;
+  height: 700px;
   width: 100%;
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
-  padding: 0px 24px;
+  padding: 10px 24px;
 `;
 
 export const InfoRow = styled.div`
@@ -79,6 +79,14 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;
 
 export const ImgWrap = styled.div`
@@ -87,6 +95,7 @@ export const ImgWrap = styled.div`
   align-content: center;
   max-width: 500px;
   height: 100%;
+  margin: 10px 0px;
 `;
 
 export const Img = styled.img`

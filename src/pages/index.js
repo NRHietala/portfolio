@@ -6,11 +6,8 @@ import Info from "../components/Info";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import About from "../components/About";
-import {
-  HomeObjTwo,
-  // HomeObjThree,
-  HomeObjFour,
-} from "../components/Info/Data";
+import Skills from "../components/Skills";
+import { HomeObjFour } from "../components/Info/Data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +21,9 @@ const Home = () => {
       <Navbar toggleMenu={toggleMenu} />
       <HeroSection />
       <About />
-      <Info {...HomeObjTwo} />
+      <Skills />
       <Services />
-      {/* new component about skills */}
-      {/* <Info {...HomeObjThree} /> */}
       <Info {...HomeObjFour} />
-
-      {/* use services comp for projects */}
-      {/* Add Contact Comp at the bottom */}
       <Footer />
     </>
   );
