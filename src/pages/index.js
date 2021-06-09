@@ -7,11 +7,7 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import {
-  HomeObjTwo,
-  // HomeObjThree,
-  HomeObjFour,
-} from "../components/Info/Data";
+import { HomeObjFour } from "../components/Info/Data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,14 +22,8 @@ const Home = () => {
       <HeroSection />
       <About />
       <Skills />
-      {/* <Info {...HomeObjTwo} /> */}
       <Services />
-      {/* new component about skills */}
-      {/* <Info {...HomeObjThree} /> */}
       <Info {...HomeObjFour} />
-
-      {/* use services comp for projects */}
-      {/* Add Contact Comp at the bottom */}
       <Footer />
     </>
   );

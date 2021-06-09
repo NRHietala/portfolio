@@ -2,47 +2,80 @@ import styled from "styled-components";
 
 export const SkillsContainer = styled.section`
   color: #fff;
-  background: lightblue;
-  // bg color #010606
+  background: #010606;
 `;
 
 export const SkillsWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 700px;
+  min-height: 400px;
+  max-height: 900px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 24px;
+  padding: 10px 24px;
 `;
 
 export const SkillsCardContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0px 24px;
 `;
 
 export const SkillH2 = styled.h2`
   color: #ef0195;
   font-size: 40px;
   text-align: center;
+  padding: 10px 0px;
 
   @media screen and (max-width: 768px) {
     font-size: 35px;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 32px;
+    font-size: 27px;
   }
 `;
 
-export const CardContainer = styled.div``;
+///////////////// SkillCard Style Elements /////////////////
+
+export const CardContainer = styled.div`
+  padding: 20px;
+`;
 
 export const CardWrapper = styled.div``;
 
 export const Title = styled.h3`
-  background: orange;
+  text-align: center;
+  color: #40e0d0;
+  font-size: 28px;
+  padding: 5px 10px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
+
+export const Skill = styled.li`
+  list-style-type: none;
+  text-align: center;
+  font-size: 18px;
+  padding: 3px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px;
+  }
 `;

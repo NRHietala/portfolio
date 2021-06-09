@@ -13,5 +13,5 @@ export const BackEnd = {
 export const Tools = {
   id: "tools",
   title: "Tools",
-  tech: ["Git", "GitHub", "Postman", "VScode", "Netlify", "Heroku", "Terminal"],
+  tech: ["Git", "GitHub", "Postman", "VScode", "Netlify", "Heroku"],
 };

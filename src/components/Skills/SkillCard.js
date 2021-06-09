@@ -1,5 +1,5 @@
 import React from "react";
-import { CardContainer, CardWrapper, Title } from "./SkillsElements";
+import { CardContainer, CardWrapper, Title, Skill } from "./SkillsElements";
 
 const SkillCard = props => {
   const { id, title, tech } = props;
@@ -9,7 +9,7 @@ const SkillCard = props => {
         <CardWrapper>
           <Title>{title}</Title>
           {tech.map((tech, index) => {
-            return <li key={index}>{tech}</li>;
+            return <Skill key={index}>{tech}</Skill>;
           })}
         </CardWrapper>
       </CardContainer>
