@@ -7,6 +7,8 @@ import {
   SkillH2,
 } from "./SkillsElements";
 
+import { FrontEnd, BackEnd, Tools } from "./SkillsData";
+
 function Skills() {
   return (
     <>
@@ -14,7 +16,9 @@ function Skills() {
         <SkillsWrapper>
           <SkillH2>Skills</SkillH2>
           <SkillsCardContainer>
-            <SkillCard title="title" />
+            <SkillCard {...FrontEnd} />
+            <SkillCard {...BackEnd} />
+            <SkillCard {...Tools} />
           </SkillsCardContainer>
         </SkillsWrapper>
       </SkillsContainer>
