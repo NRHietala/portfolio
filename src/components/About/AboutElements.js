@@ -13,7 +13,7 @@ export const InfoWrapper = styled.div`
   display: grid;
   justify-content: center;
   z-index: 1;
-  height: 860px;
+  height: 700px;
   width: 100%;
   max-width: 1400px;
   margin-right: auto;

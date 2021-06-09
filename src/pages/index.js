@@ -6,6 +6,7 @@ import Info from "../components/Info";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import About from "../components/About";
+import Skills from "../components/Skills";
 import {
   HomeObjTwo,
   // HomeObjThree,
@@ -24,7 +25,8 @@ const Home = () => {
       <Navbar toggleMenu={toggleMenu} />
       <HeroSection />
       <About />
-      <Info {...HomeObjTwo} />
+      <Skills />
+      {/* <Info {...HomeObjTwo} /> */}
       <Services />
       {/* new component about skills */}
       {/* <Info {...HomeObjThree} /> */}

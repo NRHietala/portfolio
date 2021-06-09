@@ -48,7 +48,7 @@ export const HeroH1 = styled.h1`
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   @media screen and (max-width: 480px) {
