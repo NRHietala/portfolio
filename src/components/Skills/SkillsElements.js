@@ -45,6 +45,7 @@ export const SkillH2 = styled.h2`
 ///////////////// SkillCard Style Elements /////////////////
 
 export const CardContainer = styled.div`
+  width: 250px;
   padding: 20px;
 `;
 
@@ -54,7 +55,7 @@ export const Title = styled.h3`
   text-align: center;
   color: #40e0d0;
   font-size: 28px;
-  padding: 5px 10px;
+  padding: 4px 7px;
 
   @media screen and (max-width: 768px) {
     font-size: 25px;
