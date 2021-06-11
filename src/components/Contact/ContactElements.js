@@ -44,6 +44,7 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0px 15px;
   grid-area: col2;
+  /* text-align: center;  can change header position here*/
 `;
 
 export const TextWrapper = styled.div`
@@ -82,11 +83,10 @@ export const FormContainer = styled.form`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: space-between;
   border-radius: 4px;
-  /* background: gray; */
   border: 2px solid magenta;
   border-radius: 4px;
+  max-width: 450px;
 `;
 
 export const FormWrapper = styled.div`
@@ -134,10 +134,10 @@ export const BtnWrap = styled.div`
 `;
 
 export const Btn = styled.button`
-  /* border-radius: 50px; */
+  border-radius: 50px;
   background: #40e0d0;
   white-space: nowrap;
-  padding: 5px 11px;
+  padding: 10px 20px;
   color: #000;
   font-size: 16px;
   outline: none;
