@@ -29,6 +29,7 @@ const Contact = () => {
               <TextWrapper>
                 <TopLine>Let's Get In Touch!</TopLine>
               </TextWrapper>
+              {/* Need to add ContactForm functionality to send email (nodemailer) */}
               <ContactForm />
             </Column2>
           </ContactRow>

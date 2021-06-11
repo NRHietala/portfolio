@@ -39,7 +39,6 @@ export const Column1 = styled.div`
   grid-area: col1;
 `;
 
-// Form group container
 export const Column2 = styled.div`
   display: flex;
   flex-flow: column nowrap;
@@ -47,7 +46,6 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0px 15px;
   grid-area: col2;
-  /* text-align: center;  can change header position here*/
 `;
 
 export const TextWrapper = styled.div`
@@ -123,6 +121,7 @@ export const FormInput = styled.input`
   width: 100%;
   max-width: 350px;
   padding: 5px;
+  border-radius: 15px;
 `;
 
 export const FormMessageInput = styled.textarea`
@@ -130,6 +129,7 @@ export const FormMessageInput = styled.textarea`
   padding: 5px;
   height: 100px;
   resize: none;
+  border-radius: 15px;
 `;
 
 export const BtnWrap = styled.div`
