@@ -8,7 +8,13 @@ const FormInput = props => {
       <FormInputLabel htmlFor={label}>
         <span>{label}:</span>
       </FormInputLabel>
-      <FormMessageInput required={required} placeholder={placeholder} />
+      <FormMessageInput
+        required={required}
+        placeholder={placeholder}
+        rows={3}
+        cols={4}
+        maxLength={295}
+      />
     </>
   );
 };

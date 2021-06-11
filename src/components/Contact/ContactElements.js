@@ -66,7 +66,7 @@ export const ImgWrap = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  max-width: 500px;
+  /* max-width: 500px; */
   height: 100%;
   margin: 10px 0px;
 `;
@@ -83,8 +83,10 @@ export const FormContainer = styled.form`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: space-between;
-  height: 200px;
-  background: green;
+  border-radius: 4px;
+  /* background: gray; */
+  border: 2px solid magenta;
+  border-radius: 4px;
 `;
 
 export const FormWrapper = styled.div`
@@ -92,8 +94,6 @@ export const FormWrapper = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   padding: 5px;
-  border: 4px solid white;
-  border-radius: 4px;
 `;
 
 export const FormInputWrapper = styled.div`
@@ -102,18 +102,31 @@ export const FormInputWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 5px;
-  border: 1px white solid;
   border-radius: 4px;
   width: 100%;
 `;
 
 export const FormInputLabel = styled.label`
-  color: red;
+  color: turquoise;
+  font-size: 20px;
+  padding-bottom: 4px;
 `;
 
-export const FormInput = styled.input``;
+export const FormInput = styled.input`
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 5px;
+`;
 
-export const FormMessageInput = styled.textarea``;
+export const FormMessageInput = styled.textarea`
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 5px;
+  height: 100px;
+  resize: none;
+`;
 
 export const BtnWrap = styled.div`
   display: flex;
