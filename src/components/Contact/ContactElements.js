@@ -49,7 +49,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 `;
 
 export const TopLine = styled.p`
@@ -60,22 +60,6 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
-`;
-
-export const Subtitle = styled.p`
-  max-width: 600px;
-  margin-bottom: 15px;
-  font-size: 18px;
-  line-height: 24px;
-  color: #fff;
-
-  @media screen and (max-width: 768px) {
-    font-size: 16px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 14px;
-  }
 `;
 
 export const ImgWrap = styled.div`
@@ -98,22 +82,49 @@ export const FormContainer = styled.form`
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: space-between;
+  height: 200px;
+  background: green;
 `;
 
-export const FormWrapper = styled.div``;
+export const FormWrapper = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 5px;
+  border: 4px solid white;
+  border-radius: 4px;
+`;
 
-export const FormInputWrapper = styled.div``;
+export const FormInputWrapper = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px white solid;
+  border-radius: 4px;
+  width: 100%;
+`;
+
+export const FormInputLabel = styled.label`
+  color: red;
+`;
 
 export const FormInput = styled.input``;
 
 export const FormMessageInput = styled.textarea``;
 
-export const Btn = styled.a`
-  border-radius: 50px;
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Btn = styled.button`
+  /* border-radius: 50px; */
   background: #40e0d0;
   white-space: nowrap;
-  padding: 10px 22px;
+  padding: 5px 11px;
   color: #000;
   font-size: 16px;
   outline: none;

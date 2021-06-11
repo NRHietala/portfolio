@@ -1,13 +1,14 @@
 import React from "react";
+import { FormInputLabel, FormMessageInput } from "./ContactElements";
 
 const FormInput = props => {
   const { label, required, placeholder } = props;
   return (
     <>
-      <label>
-        {label}:
-        <textarea required={required} placeholder={placeholder} />
-      </label>
+      <FormInputLabel htmlFor={label}>
+        <span>{label}:</span>
+      </FormInputLabel>
+      <FormMessageInput required={required} placeholder={placeholder} />
     </>
   );
 };

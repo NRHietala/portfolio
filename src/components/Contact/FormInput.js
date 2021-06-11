@@ -1,15 +1,16 @@
 import React from "react";
+import { FormInputLabel, FormInput } from "./ContactElements";
 
-const FormInput = props => {
+const FormTextInput = props => {
   const { label, type, required, placeholder } = props;
   return (
     <>
-      <label>
-        {label}:
-        <input type={type} required={required} placeholder={placeholder} />
-      </label>
+      <FormInputLabel htmlFor={label}>
+        <span>{label}:</span>
+      </FormInputLabel>
+      <FormInput type={type} required={required} placeholder={placeholder} />
     </>
   );
 };
 
-export default FormInput;
+export default FormTextInput;

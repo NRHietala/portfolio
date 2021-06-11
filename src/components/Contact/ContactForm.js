@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import FormInput from "./FormInput";
+import FormTextInput from "./FormInput";
 import FormMessageInput from "./FormMessageInput";
 
 import {
   FormContainer,
   FormWrapper,
   FormInputWrapper,
+  BtnWrap,
+  Btn,
 } from "./ContactElements";
 
 const ContactForm = () => {
@@ -37,30 +39,31 @@ const ContactForm = () => {
     <FormContainer onSubmit={handleSubmit}>
       <FormWrapper>
         <FormInputWrapper>
-          <FormInput
+          <FormTextInput
             label="Name"
             type="text"
             required={true}
-            placeholder="placeholder test"
+            placeholder="Enter Your Name"
           />
         </FormInputWrapper>
         <FormInputWrapper>
-          <FormInput
+          <FormTextInput
             label="Email"
             type="email"
             required={true}
-            placeholder="Enter Email"
+            placeholder="Enter Your Email"
           />
         </FormInputWrapper>
         <FormInputWrapper>
           <FormMessageInput
             label="Message"
             required={true}
-            placeholder="Enter a Message"
+            placeholder="Send a Message!"
           />
         </FormInputWrapper>
-
-        <button type="submit">{status}</button>
+        <BtnWrap>
+          <Btn type="submit">{status}</Btn>
+        </BtnWrap>
       </FormWrapper>
     </FormContainer>
   );
