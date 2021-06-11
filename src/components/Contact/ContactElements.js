@@ -85,7 +85,7 @@ export const FormContainer = styled.form`
   flex-flow: column nowrap;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid magenta;
+  border: 1px solid #ef0195;
   border-radius: 4px;
   max-width: 450px;
 `;
