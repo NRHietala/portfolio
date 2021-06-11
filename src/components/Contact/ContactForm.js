@@ -1,7 +1,16 @@
 import React, { useState } from "react";
+import FormInput from "./FormInput";
+import FormMessageInput from "./FormMessageInput";
+
+import {
+  FormContainer,
+  FormWrapper,
+  FormInputWrapper,
+} from "./ContactElements";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
+
   const handleSubmit = async e => {
     e.preventDefault();
     setStatus("Sending...");
@@ -11,6 +20,7 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     };
+
     let response = await fetch("http://localhost:5000/contact", {
       method: "POST",
       headers: {
@@ -22,22 +32,37 @@ const ContactForm = () => {
     let result = await response.json();
     alert(result.status);
   };
+
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
-      </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
-    </form>
+    <FormContainer onSubmit={handleSubmit}>
+      <FormWrapper>
+        <FormInputWrapper>
+          <FormInput
+            label="Name"
+            type="text"
+            required={true}
+            placeholder="placeholder test"
+          />
+        </FormInputWrapper>
+        <FormInputWrapper>
+          <FormInput
+            label="Email"
+            type="email"
+            required={true}
+            placeholder="Enter Email"
+          />
+        </FormInputWrapper>
+        <FormInputWrapper>
+          <FormMessageInput
+            label="Message"
+            required={true}
+            placeholder="Enter a Message"
+          />
+        </FormInputWrapper>
+
+        <button type="submit">{status}</button>
+      </FormWrapper>
+    </FormContainer>
   );
 };
 

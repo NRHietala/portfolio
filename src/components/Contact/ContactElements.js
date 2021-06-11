@@ -39,6 +39,7 @@ export const Column1 = styled.div`
   grid-area: col1;
 `;
 
+// Form group container
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0px 15px;
@@ -89,4 +90,41 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
   width: 100%;
   padding-right: 0px;
+`;
+
+///////////////// ContactForm Style Elements /////////////////
+
+export const FormContainer = styled.form`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+`;
+
+export const FormWrapper = styled.div``;
+
+export const FormInputWrapper = styled.div``;
+
+export const FormInput = styled.input``;
+
+export const FormMessageInput = styled.textarea``;
+
+export const Btn = styled.a`
+  border-radius: 50px;
+  background: #40e0d0;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #000;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: white;
+    color: #010606;
+  }
 `;
