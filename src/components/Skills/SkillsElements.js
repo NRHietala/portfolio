@@ -29,7 +29,7 @@ export const SkillsCardContainer = styled.div`
 
 export const SkillH2 = styled.h2`
   color: #ef0195;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   padding: 10px 0px;
 
