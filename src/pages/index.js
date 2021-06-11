@@ -7,6 +7,8 @@ import Services from "../components/Services";
 import Footer from "../components/Footer";
 import About from "../components/About";
 import Skills from "../components/Skills";
+// import Projects from ../components/Projects";
+import Contact from "../components/Contact";
 import { HomeObjFour } from "../components/Info/Data";
 
 const Home = () => {
@@ -23,7 +25,8 @@ const Home = () => {
       <About />
       <Skills />
       <Services />
-      <Info {...HomeObjFour} />
+      <Contact />
+      {/* <Info {...HomeObjFour} /> */}
       <Footer />
     </>
   );

@@ -2,9 +2,9 @@ import React from "react";
 import Image from "../../assets/images/whoami.svg";
 
 import {
-  InfoContainer,
-  InfoWrapper,
-  InfoRow,
+  AboutContainer,
+  AboutWrapper,
+  AboutRow,
   Column1,
   TextWrapper,
   TopLine,
@@ -18,9 +18,9 @@ import {
 const About = () => {
   return (
     <>
-      <InfoContainer id="about">
-        <InfoWrapper>
-          <InfoRow>
+      <AboutContainer id="about">
+        <AboutWrapper>
+          <AboutRow>
             <Column1>
               <TextWrapper>
                 <TopLine>WhoAmI?</TopLine>
@@ -41,9 +41,9 @@ const About = () => {
                 <Img src={Image} alt="question mark" />
               </ImgWrap>
             </Column2>
-          </InfoRow>
-        </InfoWrapper>
-      </InfoContainer>
+          </AboutRow>
+        </AboutWrapper>
+      </AboutContainer>
     </>
   );
 };
