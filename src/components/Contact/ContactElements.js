@@ -41,6 +41,9 @@ export const Column1 = styled.div`
 
 // Form group container
 export const Column2 = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   margin-bottom: 15px;
   padding: 0px 15px;
   grid-area: col2;
@@ -104,6 +107,7 @@ export const FormInputWrapper = styled.div`
   padding: 5px;
   border-radius: 4px;
   width: 100%;
+  min-width: 350px;
 `;
 
 export const FormInputLabel = styled.label`
@@ -120,9 +124,7 @@ export const FormInput = styled.input`
 `;
 
 export const FormMessageInput = styled.textarea`
-  text-align: center;
   width: 100%;
-  max-width: 350px;
   padding: 5px;
   height: 100px;
   resize: none;

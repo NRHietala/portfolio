@@ -55,11 +55,7 @@ const ContactForm = () => {
           />
         </FormInputWrapper>
         <FormInputWrapper>
-          <FormMessageInput
-            label="Message"
-            required={true}
-            placeholder="Send a Message!"
-          />
+          <FormMessageInput label="Message" required={true} />
         </FormInputWrapper>
         <BtnWrap>
           <Btn type="submit">{status}</Btn>
