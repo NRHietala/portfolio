@@ -70,14 +70,12 @@ export const ImgWrap = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  /* max-width: 500px; */
   height: 100%;
   margin: 10px 0px;
 `;
 
 export const Img = styled.img`
   width: 100%;
-  padding-right: 0px;
 `;
 
 ///////////////// ContactForm Style Elements /////////////////
@@ -87,7 +85,7 @@ export const FormContainer = styled.form`
   flex-flow: column nowrap;
   justify-content: center;
   border-radius: 4px;
-  border: 2px solid magenta;
+  border: 1px solid magenta;
   border-radius: 4px;
   max-width: 450px;
 `;
@@ -96,7 +94,7 @@ export const FormWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  padding: 5px;
+  padding: 15px;
 `;
 
 export const FormInputWrapper = styled.div`
@@ -107,11 +105,15 @@ export const FormInputWrapper = styled.div`
   padding: 5px;
   border-radius: 4px;
   width: 100%;
-  min-width: 350px;
+  min-width: 320px;
+
+  @media screen and (max-width: 480px) {
+    min-width: 200px;
+  }
 `;
 
 export const FormInputLabel = styled.label`
-  color: turquoise;
+  color: #40e0d0;
   font-size: 20px;
   padding-bottom: 4px;
 `;
@@ -133,6 +135,7 @@ export const FormMessageInput = styled.textarea`
 export const BtnWrap = styled.div`
   display: flex;
   justify-content: center;
+  padding: 10px;
 `;
 
 export const Btn = styled.button`
