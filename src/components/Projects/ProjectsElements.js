@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const ServicesContainer = styled.div`
+export const ProjectsContainer = styled.div`
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 800px;
-  display: flex;
   background: #010606;
 
   @media screen and (max-width: 768px) {
@@ -17,11 +17,11 @@ export const ServicesContainer = styled.div`
   }
 `;
 
-export const ServicesWrapper = styled.div`
+export const ProjectsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0px auto;
-  max-width: 1000px;
+  max-width: 1200px;
   align-items: center;
   grid-gap: 16px;
   padding: 0px 50px;
@@ -36,7 +36,7 @@ export const ServicesWrapper = styled.div`
   }
 `;
 
-export const ServicesCard = styled.div`
+export const ProjectsCard = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,7 +44,7 @@ export const ServicesCard = styled.div`
   background: #fff;
   border-radius: 10px;
   max-height: 340px;
-  padding: 30px;
+  padding: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
 
@@ -55,15 +55,15 @@ export const ServicesCard = styled.div`
   }
 `;
 
-export const ServicesIcon = styled.img`
-  height: 160px;
-  width: 160px;
+export const ProjectsIcon = styled.img`
+  height: 200px;
+  width: 280px;
   margin-bottom: 10px;
 `;
 
-export const ServicesH1 = styled.h1`
+export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: #ef0195;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -71,12 +71,12 @@ export const ServicesH1 = styled.h1`
   }
 `;
 
-export const ServicesH2 = styled.h2`
+export const ProjectsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
 `;
 
-export const ServicesP = styled.p`
+export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;
