@@ -19,7 +19,7 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin: 0px auto;
   max-width: 1200px;
   align-items: center;
