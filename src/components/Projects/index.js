@@ -29,8 +29,8 @@ const Projects = () => {
           <ProjectsIcon src={fp_service_tracker} />
           <ProjectsH2>Non-Profit Service Tracker</ProjectsH2>
           <ProjectsP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
-            voluptas?
+            Employees can track services provided to recipients and create
+            metrics
           </ProjectsP>
         </ProjectsCard>
       </ProjectsWrapper>
