@@ -7,22 +7,25 @@ import {
   ProjectsContainer,
   ProjectsH1,
   ProjectsWrapper,
-  // ProjectCard,
 } from "./ProjectsElements";
 
 const afInfo = [
-  `• Architected state management system combining multiple reducers using React-Redux and local storage for state persistence
+  `
+  • Architected state management system combining multiple reducers using React-Redux and local storage for state persistence
 
-  • Developed secure routes utilizing Axios and Jwt tokens to only allow access to authorized users`,
+  • Developed secure routes utilizing Axios and Jwt tokens to only allow access to authorized users
+
+  • Created login and manipulated API response data to properly route traffic to their respective dashboards
+  `,
 ];
 
 const stInfo = [
   `
 • Collaborated remotely with a team of 9 Web Developers to design, plan, and build fully functional features
 
-• Architected new database tables, seed files, and endpoints with the back-end team
-
 • Sculpted custom SQL queries with Knex to deliver data effectively throughout the application while minimizing API calls to the Postgres database
+
+• Architected new database tables, seed files, and endpoints with the back-end team
 `,
 ];
 

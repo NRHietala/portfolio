@@ -42,10 +42,7 @@ export const Card = styled.div`
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  /* background: gray; */
   border-radius: 10px;
-  height: 330px;
-  width: 500px; // fix width once backside text is in
   padding: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
@@ -61,6 +58,11 @@ export const ProjectsIcon = styled.img`
   height: 200px;
   width: 280px;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 350px) {
+    height: 140px;
+    width: 190px;
+  }
 `;
 
 export const ProjectsH1 = styled.h1`
@@ -111,6 +113,7 @@ export const BtnWrap = styled.div`
   display: flex;
   justify-content: center;
   padding: 10px;
+  margin-top: 10px;
 `;
 
 export const Btn = styled.button`
