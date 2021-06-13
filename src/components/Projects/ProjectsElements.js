@@ -36,15 +36,16 @@ export const ProjectsWrapper = styled.div`
   }
 `;
 
-export const ProjectsCard = styled.div`
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  background: gray;
+  /* background: gray; */
   border-radius: 10px;
-  max-height: 340px;
+  height: 330px;
+  width: 500px;
   padding: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
@@ -53,10 +54,6 @@ export const ProjectsCard = styled.div`
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
-
-    &:hover .hoverdiv {
-      opacity: 1;
-    }
   }
 `;
 
@@ -86,12 +83,42 @@ export const ProjectsP = styled.p`
   text-align: center;
 `;
 
-export const ProjectCardHover = styled.div`
-  width: 100%;
-  height: 100%;
-  position: relative;
-  background: red;
-  opacity: 0;
+export const FrontSide = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const BackSide = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+`;
+
+export const Btn = styled.button`
+  border-radius: 50px;
+  background: #40e0d0;
+  white-space: nowrap;
+  padding: 10px 20px;
   color: #000;
-  text-align: center;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: white;
+    color: #010606;
+  }
 `;
