@@ -10,6 +10,22 @@ import {
   // ProjectCard,
 } from "./ProjectsElements";
 
+const afInfo = [
+  `• Architected state management system combining multiple reducers using React-Redux and local storage for state persistence
+
+  • Developed secure routes utilizing Axios and Jwt tokens to only allow access to authorized users`,
+];
+
+const stInfo = [
+  `
+• Collaborated remotely with a team of 9 Web Developers to design, plan, and build fully functional features
+
+• Architected new database tables, seed files, and endpoints with the back-end team
+
+• Sculpted custom SQL queries with Knex to deliver data effectively throughout the application while minimizing API calls to the Postgres database
+`,
+];
+
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
@@ -19,15 +35,17 @@ const Projects = () => {
           image={anywhere_fitness}
           title="Anywhere Fitness"
           frontText="Instructors can create virtual fitness classes that users can enroll in"
-          backTitle="tech used to create"
-          backText="asdfasdf"
+          backTitle="Front End Developer"
+          subTitle="JavaScript | React | Redux"
+          backText={afInfo}
         />
         <ProjectCard
           image={fp_service_tracker}
           title="Non-Profit Service Tracker"
           frontText="Employees can track services provided to recipients and create metrics"
-          backTitle="tech used to create"
-          backText="asdfasdf"
+          backTitle="Back End Developer"
+          subTitle="Node | Express | Postgres"
+          backText={stInfo}
         />
       </ProjectsWrapper>
     </ProjectsContainer>

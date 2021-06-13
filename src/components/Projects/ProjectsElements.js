@@ -45,7 +45,7 @@ export const Card = styled.div`
   /* background: gray; */
   border-radius: 10px;
   height: 330px;
-  width: 500px;
+  width: 500px; // fix width once backside text is in
   padding: 10px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
@@ -76,11 +76,21 @@ export const ProjectsH1 = styled.h1`
 export const ProjectsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
+  color: #ef0195;
+  white-space: pre-line;
+`;
+
+export const Subtitle = styled.h2`
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #40e0d0;
 `;
 
 export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
+  color: #fff;
+  white-space: pre-line;
 `;
 
 export const FrontSide = styled.div`
@@ -120,5 +130,6 @@ export const Btn = styled.button`
     transition: all 0.2s ease-in-out;
     background: white;
     color: #010606;
+    border: 2px white solid;
   }
 `;

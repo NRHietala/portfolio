@@ -8,12 +8,13 @@ import {
   ProjectsH2,
   ProjectsP,
   BackSide,
+  Subtitle,
   BtnWrap,
   Btn,
 } from "./ProjectsElements";
 
 const ProjectCard = props => {
-  const { image, title, frontText, backTitle, backText } = props;
+  const { image, title, frontText, backTitle, subTitle, backText } = props;
   const [isFlipped, setIsFlipped] = useState(false);
   const [isHovering, setisHovering] = useState(false);
 
@@ -38,6 +39,7 @@ const ProjectCard = props => {
         </FrontSide>
         <BackSide>
           <ProjectsH2>{backTitle}</ProjectsH2>
+          <Subtitle>{subTitle}</Subtitle>
           <ProjectsP>{backText}</ProjectsP>
           <BtnWrap>
             <Btn onClick={handleClick}>Overview</Btn>
