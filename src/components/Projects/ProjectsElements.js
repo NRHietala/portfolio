@@ -41,6 +41,7 @@ export const ProjectsCard = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   background: #fff;
   border-radius: 10px;
   max-height: 340px;
@@ -52,6 +53,10 @@ export const ProjectsCard = styled.div`
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
     cursor: pointer;
+
+    &:hover .hoverdiv {
+      opacity: 1;
+    }
   }
 `;
 
@@ -79,4 +84,13 @@ export const ProjectsH2 = styled.h2`
 export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
+`;
+
+export const ProjectCardHover = styled.div`
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: red;
+  opacity: 0;
+  color: #000;
 `;
