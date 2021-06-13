@@ -14,17 +14,17 @@ import {
 } from "./ProjectsElements";
 
 const Projects = () => {
-  const [displayHidden, setDisplayHidden] = useState(false);
+  const [isHovering, setisHovering] = useState(false);
 
-  const showHidden = () => {
-    setDisplayHidden(true);
+  const handleMouseHover = () => {
+    setisHovering(!isHovering);
   };
 
   return (
     <ProjectsContainer id="projects">
       <ProjectsH1>My Projects</ProjectsH1>
       <ProjectsWrapper>
-        <ProjectsCard onMouseOver={showHidden}>
+        <ProjectsCard onMouseOver={handleMouseHover}>
           <ProjectsIcon src={anywhere_fitness} />
           <ProjectsH2>Anywhere Fitness</ProjectsH2>
           <ProjectsP>

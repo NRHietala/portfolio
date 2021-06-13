@@ -42,7 +42,7 @@ export const ProjectsCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  background: #fff;
+  background: gray;
   border-radius: 10px;
   max-height: 340px;
   padding: 10px;
@@ -93,4 +93,5 @@ export const ProjectCardHover = styled.div`
   background: red;
   opacity: 0;
   color: #000;
+  text-align: center;
 `;
