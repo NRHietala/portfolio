@@ -30,13 +30,10 @@ const About = () => {
                 <TopLine>Who Am I?</TopLine>
                 <Heading className="lobster-font">Nathan Hietala</Heading>
                 <Subtitle>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
-                  quo id sit maxime nesciunt repudiandae cum ratione, asperiores
-                  doloribus deserunt voluptate veniam. Similique amet delectus
-                  distinctio animi cumque eveniet, repudiandae dolore porro nam
-                  odio nobis deleniti facilis illum quia! Accusamus quia numquam
-                  similique unde perspiciatis doloremque, excepturi fuga saepe
-                  totam!
+                  Who am I? All philosophical arguments aside, I'm presently a
+                  career changer breaking into tech. I've always been a problem
+                  solver working to find solutions to overcome obstacles, and
+                  now I do it with code!
                 </Subtitle>
               </TextWrapper>
               <ContactWrap>
