@@ -6,6 +6,7 @@ export const ProjectsContainer = styled.div`
   justify-content: center;
   align-items: center;
   background: #010606;
+  padding-top: 50px;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -13,7 +14,7 @@ export const ProjectsContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    padding: 50px 20px 50px 20px;
+    padding: 0px;
     height: 1200px;
   }
 `;
@@ -100,6 +101,7 @@ export const ProjectsP = styled.p`
   text-align: center;
   color: #fff;
   white-space: pre-line;
+  padding: 10px 0px;
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
@@ -111,6 +113,20 @@ export const FrontSide = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+`;
+
+export const RepoLink = styled.a`
+  color: #40e0d0;
+  text-decoration: none;
+  padding: 6px 15px;
+  border-radius: 50px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: white;
+    color: #010606;
+  }
 `;
 
 export const BackSide = styled.div`
@@ -144,6 +160,5 @@ export const Btn = styled.button`
     transition: all 0.2s ease-in-out;
     background: white;
     color: #010606;
-    border: 2px white solid;
   }
 `;

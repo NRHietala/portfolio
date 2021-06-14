@@ -47,9 +47,8 @@ const Hero = () => {
           />
         </TypeWrap>
         <HeroP>
-          Hello and welcome. I'm a full stack web developer with a passion for
-          learning new things and finding creative ways to solve real world
-          problems with code!
+          I'm a full stack web developer with a passion for learning new things
+          and finding creative ways to solve real world problems with code!
         </HeroP>
       </HeroContent>
     </HeroContainer>

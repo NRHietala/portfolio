@@ -116,6 +116,7 @@ export const ContactWrap = styled.div`
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  padding: 10px 0px;
 
   @media screen and (max-width: 820px) {
     flex-direction: column;
