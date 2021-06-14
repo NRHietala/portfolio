@@ -37,6 +37,8 @@ const Projects = () => {
         <ProjectCard
           image={anywhere_fitness}
           title="Anywhere Fitness"
+          repoLink="https://github.com/anywhere-fitness-tt2/Front-end"
+          repoText="Anywhere Fitness Repo"
           frontText="Instructors can create virtual fitness classes that users can enroll in"
           backTitle="Front End Developer"
           subTitle="JavaScript | React | Redux"
@@ -45,6 +47,8 @@ const Projects = () => {
         <ProjectCard
           image={fp_service_tracker}
           title="Non-Profit Service Tracker"
+          repoLink="https://github.com/NRHietala/family-promise-service-tracker-be-a"
+          repoText="Service Tracker Repo"
           frontText="Employees can track services provided to recipients and create metrics"
           backTitle="Back End Developer"
           subTitle="Node | Express | Postgres"

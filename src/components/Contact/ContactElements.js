@@ -37,6 +37,10 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0px 15px;
   grid-area: col1;
+
+  @media screen and (max-width: 768px) {
+    height: 310px;
+  }
 `;
 
 export const Column2 = styled.div`
@@ -49,15 +53,18 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
   max-width: 540px;
   padding-top: 0px;
   padding-bottom: 30px;
 `;
 
 export const TopLine = styled.p`
-  color: #ef0195;
+  color: #40e0d0;
   font-size: 30px;
-  line-height: 16px;
   font-weight: 700;
   margin-bottom: 16px;
   letter-spacing: 2.5px;

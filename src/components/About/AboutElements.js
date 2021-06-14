@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0px;
+    padding: 20px 0px;
   }
 `;
 
@@ -15,10 +15,13 @@ export const AboutWrapper = styled.div`
   z-index: 1;
   height: 700px;
   width: 100%;
-  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px 24px;
+
+  @media screen and (max-width: 768px) {
+    height: 500px;
+  }
 `;
 
 export const AboutRow = styled.div`
@@ -42,13 +45,18 @@ export const Column1 = styled.div`
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0px 15px;
+  max-width: 625px;
   grid-area: col2;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-top: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
+  text-align: center;
 `;
 
 export const TopLine = styled.p`
@@ -94,12 +102,36 @@ export const ImgWrap = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  max-width: 500px;
   height: 100%;
   margin: 10px 0px;
 `;
 
 export const Img = styled.img`
   width: 100%;
-  padding-right: 0px;
+`;
+
+export const ContactWrap = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0px;
+
+  @media screen and (max-width: 820px) {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+`;
+
+export const ContactIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const ContactIconLink = styled.a`
+  color: #fff;
+  font-size: 30px;
+  padding: 0px 5px;
 `;

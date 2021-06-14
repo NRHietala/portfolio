@@ -11,10 +11,20 @@ import {
   Subtitle,
   BtnWrap,
   Btn,
+  RepoLink,
 } from "./ProjectsElements";
 
 const ProjectCard = props => {
-  const { image, title, frontText, backTitle, subTitle, backText } = props;
+  const {
+    image,
+    title,
+    repoLink,
+    repoLabel,
+    frontText,
+    backTitle,
+    subTitle,
+    backText,
+  } = props;
   const [isFlipped, setIsFlipped] = useState(false);
   const [isHovering, setisHovering] = useState(false);
 
@@ -32,6 +42,9 @@ const ProjectCard = props => {
         <FrontSide>
           <ProjectsIcon src={image} />
           <ProjectsH2>{title}</ProjectsH2>
+          <RepoLink href={repoLink} target="_blank" aria-label={repoLabel}>
+            GitHub Repo
+          </RepoLink>
           <ProjectsP>{frontText}</ProjectsP>
           <BtnWrap>
             <Btn onClick={handleClick}>Details</Btn>
