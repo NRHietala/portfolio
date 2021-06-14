@@ -23,7 +23,7 @@ const About = () => {
           <AboutRow>
             <Column1>
               <TextWrapper>
-                <TopLine>WhoAmI?</TopLine>
+                <TopLine>Who Am I?</TopLine>
                 <Heading className="lobster-font">Nathan Hietala</Heading>
                 <Subtitle>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
