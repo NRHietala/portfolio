@@ -36,7 +36,7 @@ export const ContactLogo = styled(Link)`
   display: flex;
   justify-self: flex-start;
   align-items: center;
-  color: #fff;
+  color: #40e0d0;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
