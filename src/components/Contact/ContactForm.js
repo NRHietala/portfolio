@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import emailjs from "emailjs-com";
 import FormTextInput from "./FormInput";
 import FormMessageInput from "./FormMessageInput";
 
@@ -11,36 +12,35 @@ import {
 } from "./ContactElements";
 
 const ContactForm = () => {
-  const [status, setStatus] = useState("Submit");
-
-  const handleSubmit = async e => {
+  function sendEmail(e) {
     e.preventDefault();
-    setStatus("Sending...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
 
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Submit");
-    let result = await response.json();
-    alert(result.status);
-  };
+    // Don't worry, none of this is sensitive data 🙂
+    emailjs
+      .sendForm(
+        "gmail",
+        "template_k971q2q",
+        e.target,
+        "user_7HtPDHs72LPcDXNsBRIWU"
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
 
   return (
-    <FormContainer onSubmit={handleSubmit}>
+    <FormContainer onSubmit={sendEmail}>
       <FormWrapper>
         <FormInputWrapper>
           <FormTextInput
             label="Name"
+            name="name"
             type="text"
             required={true}
             placeholder="Enter Your Name"
@@ -49,16 +49,17 @@ const ContactForm = () => {
         <FormInputWrapper>
           <FormTextInput
             label="Email"
+            name="email"
             type="email"
             required={true}
             placeholder="Enter Your Email"
           />
         </FormInputWrapper>
         <FormInputWrapper>
-          <FormMessageInput label="Message" required={true} />
+          <FormMessageInput label="Message" name="message" required={true} />
         </FormInputWrapper>
         <BtnWrap>
-          <Btn type="submit">{status}</Btn>
+          <Btn>Send</Btn>
         </BtnWrap>
       </FormWrapper>
     </FormContainer>
