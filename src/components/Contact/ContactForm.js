@@ -59,7 +59,7 @@ const ContactForm = () => {
           <FormMessageInput label="Message" name="message" required={true} />
         </FormInputWrapper>
         <BtnWrap>
-          <Btn type="submit">Send</Btn>
+          <Btn>Send</Btn>
         </BtnWrap>
       </FormWrapper>
     </FormContainer>
