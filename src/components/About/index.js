@@ -1,4 +1,5 @@
 import React from "react";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Image from "../../assets/images/whoami.svg";
 
 import {
@@ -13,6 +14,9 @@ import {
   Column2,
   ImgWrap,
   Img,
+  ContactWrap,
+  ContactIcons,
+  ContactIconLink,
 } from "./AboutElements";
 
 const About = () => {
@@ -35,6 +39,26 @@ const About = () => {
                   totam!
                 </Subtitle>
               </TextWrapper>
+              <ContactWrap>
+                <TopLine>Check out my other profiles</TopLine>
+                <ContactIcons>
+                  <ContactIconLink
+                    href="//www.linkedin.com/in/nrhietala/"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <FaLinkedin />
+                  </ContactIconLink>
+
+                  <ContactIconLink
+                    href="//www.github.com/nrhietala"
+                    target="_blank"
+                    aria-label="Github"
+                  >
+                    <FaGithub />
+                  </ContactIconLink>
+                </ContactIcons>
+              </ContactWrap>
             </Column1>
             <Column2>
               <ImgWrap>

@@ -7,11 +7,11 @@ export const SkillsContainer = styled.section`
   max-height: 900px;
 
   @media screen and (max-width: 768px) {
-    padding: 80px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
   }
 
   @media screen and (max-width: 480px) {
-    padding: 40px 0px 0px 0px;
+    padding: 20px 20px;
   }
 `;
 
