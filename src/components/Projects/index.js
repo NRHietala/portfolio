@@ -32,7 +32,7 @@ const stInfo = [
 const Projects = () => {
   return (
     <ProjectsContainer id="projects">
-      <ProjectsH1>My Projects</ProjectsH1>
+      <ProjectsH1 className="lobster-font">My Projects</ProjectsH1>
       <ProjectsWrapper>
         <ProjectCard
           image={anywhere_fitness}

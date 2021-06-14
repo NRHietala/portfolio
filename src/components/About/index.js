@@ -24,7 +24,7 @@ const About = () => {
             <Column1>
               <TextWrapper>
                 <TopLine>WhoAmI?</TopLine>
-                <Heading>Nathan Hietala</Heading>
+                <Heading className="lobster-font">Nathan Hietala</Heading>
                 <Subtitle>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
                   quo id sit maxime nesciunt repudiandae cum ratione, asperiores

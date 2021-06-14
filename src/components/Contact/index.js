@@ -27,7 +27,7 @@ const Contact = () => {
             </Column1>
             <Column2>
               <TextWrapper>
-                <TopLine>Let's Get In Touch!</TopLine>
+                <TopLine className="lobster-font">Let's Get In Touch!</TopLine>
               </TextWrapper>
               {/* Need to add ContactForm functionality to send email (nodemailer) */}
               <ContactForm />

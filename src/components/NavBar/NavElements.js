@@ -39,6 +39,7 @@ export const NavLogo = styled(LinkR)`
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+  letter-spacing: 2px;
 `;
 
 export const MobileMenu = styled.div`

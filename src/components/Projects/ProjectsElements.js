@@ -10,6 +10,7 @@ export const ProjectsContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     height: 1100px;
+    padding: 0px 50px;
   }
 
   @media screen and (max-width: 480px) {
@@ -59,7 +60,7 @@ export const ProjectsIcon = styled.img`
   width: 280px;
   margin-bottom: 10px;
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 410px) {
     height: 140px;
     width: 190px;
   }

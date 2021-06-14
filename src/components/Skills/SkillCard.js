@@ -7,7 +7,7 @@ const SkillCard = props => {
     <>
       <CardContainer id={id}>
         <CardWrapper>
-          <Title>{title}</Title>
+          <Title className="lobster-font">{title}</Title>
           {tech.map((tech, index) => {
             return <Skill key={index}>{tech}</Skill>;
           })}
