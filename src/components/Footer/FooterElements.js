@@ -42,6 +42,7 @@ export const ContactLogo = styled(Link)`
   font-size: 1.5rem;
   margin-bottom: 16px;
   font-weight: bold;
+  letter-spacing: 2px;
 `;
 
 export const WebRights = styled.small`
