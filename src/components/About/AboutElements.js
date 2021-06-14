@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
   background: #010606;
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0px;
+    padding: 50px 0px;
   }
 `;
 
@@ -94,12 +94,10 @@ export const ImgWrap = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
-  max-width: 500px;
   height: 100%;
   margin: 10px 0px;
 `;
 
 export const Img = styled.img`
   width: 100%;
-  padding-right: 0px;
 `;

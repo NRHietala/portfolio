@@ -14,6 +14,7 @@ export const ProjectsContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
+    padding: 0px 20px;
     height: 1300px;
   }
 `;
@@ -33,7 +34,7 @@ export const ProjectsWrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0px 20px;
+    padding: 0px 10px;
   }
 `;
 
