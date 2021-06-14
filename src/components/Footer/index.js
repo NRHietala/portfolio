@@ -21,7 +21,7 @@ const Footer = () => {
       <FooterWrap>
         <Contact>
           <ContactWrap>
-            <ContactLogo to="/" onClick={toggleHome}>
+            <ContactLogo to="/" onClick={toggleHome} className="lobster-font">
               NH
             </ContactLogo>
             <WebRights>

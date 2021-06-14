@@ -14,7 +14,7 @@ function Skills() {
     <>
       <SkillsContainer id="skills">
         <SkillsWrapper>
-          <SkillH2>Skills</SkillH2>
+          <SkillH2 className="lobster-font">Skills</SkillH2>
           <SkillsCardContainer>
             <SkillCard {...FrontEnd} />
             <SkillCard {...BackEnd} />

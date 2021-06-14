@@ -24,7 +24,7 @@ const Hero = () => {
         <ImgWrap>
           <Img src={Image} />
         </ImgWrap>
-        <HeroH1>Hi, I'm Nate</HeroH1>
+        <HeroH1 className="lobster-font">Hi, I'm Nate</HeroH1>
         <TypeWrap>
           <TypeWriterEffect
             textStyle={{
