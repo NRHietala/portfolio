@@ -20,7 +20,7 @@ export const SkillsWrapper = styled.div`
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding: 50px 24px 10px 24px;
