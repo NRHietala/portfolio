@@ -32,6 +32,7 @@ export const SkillsCardContainer = styled.div`
   justify-content: space-around;
   align-items: flex-start;
   width: 100%;
+  max-width: 1500px;
   padding: 0px 24px;
 `;
 
