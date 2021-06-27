@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import FormTextInput from "./FormInput";
+import FormTextInput from "./FormTextInput";
 import FormMessageInput from "./FormMessageInput";
 
 import {

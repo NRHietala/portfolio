@@ -22,7 +22,7 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <ImgWrap>
-          <Img src={Image} />
+          <Img src={Image} alt="nathan hietala" />
         </ImgWrap>
         <HeroH1 className="lobster-font">Hi, I'm Nate</HeroH1>
         <TypeWrap>
@@ -32,6 +32,7 @@ const Hero = () => {
               fontWeight: 400,
               fontSize: "1.2em",
               textAlign: "center",
+              fontFamily: "'Encode Sans Expanded', sans-serif",
             }}
             startDelay={2000}
             cursorColor="#fff"

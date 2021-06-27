@@ -82,6 +82,10 @@ export const NavLinks = styled(LinkS)`
   height: 100%;
   cursor: pointer;
 
+  &:hover {
+    color: ${props => props.theme.primary};
+  }
+
   &.active {
     border-bottom: 3px solid ${props => props.theme.secondary};
   }

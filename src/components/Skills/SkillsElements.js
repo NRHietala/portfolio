@@ -26,7 +26,7 @@ export const SkillsWrapper = styled.div`
   padding: 50px 24px 10px 24px;
 `;
 
-export const SkillsCardContainer = styled.div`
+export const SkillsCardContainer = styled.ul`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;

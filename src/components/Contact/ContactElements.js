@@ -79,6 +79,8 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
+  max-width: 700px;
+  max-height: 450px;
   width: 100%;
 `;
 

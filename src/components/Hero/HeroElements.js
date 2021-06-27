@@ -61,12 +61,15 @@ export const ImgWrap = styled.div`
   align-content: center;
   max-width: 500px;
   max-height: 500px;
-  height: 80%;
+  height: 100%;
   margin: 10px;
 `;
 
 export const Img = styled.img`
-  width: 60%;
+  height: 90%;
+  width: 90%;
+  max-width: 360px;
+  max-height: 400px;
   border-radius: 50%;
 `;
 

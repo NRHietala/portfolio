@@ -5,7 +5,7 @@ const FormTextInput = props => {
   const { label, name, type, required, placeholder } = props;
   return (
     <>
-      <FormInputLabel htmlFor={label}>
+      <FormInputLabel htmlFor={name}>
         <span>{label}:</span>
       </FormInputLabel>
       <FormInput
