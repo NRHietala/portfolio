@@ -47,7 +47,7 @@ const ProjectCard = props => {
           </RepoLink>
           <ProjectsP>{frontText}</ProjectsP>
           <BtnWrap>
-            <Btn onClick={handleClick}>Details</Btn>
+            <Btn onClick={handleClick}>Click for Details</Btn>
           </BtnWrap>
         </FrontSide>
         <BackSide>

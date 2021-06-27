@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.section`
   color: #fff;
-  background: #010606;
+  background: ${props => props.theme.bgColor};
 
   @media screen and (max-width: 768px) {
     height: 500px;
@@ -61,7 +61,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #ef0195;
+  color: ${props => props.theme.secondary};
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -75,7 +75,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1.%;
   font-weight: 600;
-  color: #40e0d0;
+  color: ${props => props.theme.primary};
   letter-spacing: 2px;
 
   @media screen and (max-width: 480px) {
