@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.section`
-  color: #fff;
+  color: ${props => props.theme.subText};
   background: ${props => props.theme.bgColor};
 
   @media screen and (max-width: 768px) {
@@ -88,7 +88,6 @@ export const Subtitle = styled.p`
   margin-bottom: 15px;
   font-size: 18px;
   line-height: 24px;
-  color: #fff;
 
   @media screen and (max-width: 768px) {
     font-size: 16px;
@@ -132,7 +131,7 @@ export const ContactIcons = styled.div`
 `;
 
 export const ContactIconLink = styled.a`
-  color: #fff;
+  color: ${props => props.theme.subText};
   font-size: 30px;
   padding: 0px 5px;
 `;

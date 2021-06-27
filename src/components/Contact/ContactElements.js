@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.section`
-  color: #fff;
-  background: #010606;
+  color: ${props => props.theme.subText};
+  background: ${props => props.theme.bgColor};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0px;
@@ -63,7 +63,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #40e0d0;
+  color: ${props => props.theme.secondary};
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 16px;
@@ -89,7 +89,7 @@ export const FormContainer = styled.form`
   flex-flow: column nowrap;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid #ef0195;
+  border: 1px solid ${props => props.theme.secondary};
   border-radius: 4px;
   max-width: 450px;
 `;
@@ -117,7 +117,7 @@ export const FormInputWrapper = styled.div`
 `;
 
 export const FormInputLabel = styled.label`
-  color: #40e0d0;
+  color: ${props => props.theme.primary};
   font-size: 20px;
   padding-bottom: 4px;
 `;
@@ -146,10 +146,9 @@ export const BtnWrap = styled.div`
 
 export const Btn = styled.button`
   border-radius: 50px;
-  background: #40e0d0;
+  background: ${props => props.theme.primary};
   white-space: nowrap;
   padding: 10px 20px;
-  color: #000;
   font-size: 16px;
   outline: none;
   border: none;
@@ -159,7 +158,6 @@ export const Btn = styled.button`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: white;
-    color: #010606;
+    background: ${props => props.theme.subText};
   }
 `;
