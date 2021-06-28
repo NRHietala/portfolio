@@ -1,6 +1,5 @@
 import React, { useState } from "react"; //eslint-disable-line
 import Video from "../../assets/videos/video.mp4";
-import Image from "../../assets/images/tinypic.jpg";
 import TypeWriterEffect from "react-typewriter-effect";
 import {
   HeroContainer,
@@ -22,7 +21,10 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <ImgWrap>
-          <Img src={Image} alt="nathan hietala" />
+          <Img
+            src={process.env.PUBLIC_URL$ + "/tinypic.jpg"}
+            alt="nathan hietala"
+          />
         </ImgWrap>
         <HeroH1 className="lobster-font">Hi, I'm Nate</HeroH1>
         <TypeWrap>
