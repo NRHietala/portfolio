@@ -53,7 +53,8 @@ export const SkillH2 = styled.h2`
 
 ///////////////// SkillCard Style Elements /////////////////
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.li`
+  list-style-type: none;
   width: 250px;
   padding: 20px;
 `;
@@ -71,8 +72,7 @@ export const Title = styled.h3`
   }
 `;
 
-export const Skill = styled.li`
-  list-style-type: none;
+export const Skill = styled.p`
   text-align: center;
   font-size: 18px;
   padding: 3px;

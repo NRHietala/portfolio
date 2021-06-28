@@ -76,12 +76,13 @@ export const ImgWrap = styled.div`
   align-content: center;
   height: 100%;
   margin: 10px 0px;
+  padding: 5px;
 `;
 
 export const Img = styled.img`
+  width: 100%;
   max-width: 700px;
   max-height: 450px;
-  width: 100%;
 `;
 
 ///////////////// ContactForm Style Elements /////////////////
@@ -122,6 +123,8 @@ export const FormInputLabel = styled.label`
   color: ${props => props.theme.primary};
   font-size: 20px;
   padding-bottom: 4px;
+  width: 250px;
+  text-align: center;
 `;
 
 export const FormInput = styled.input`
@@ -136,8 +139,8 @@ export const FormMessageInput = styled.textarea`
   width: 100%;
   padding: 5px;
   height: 100px;
-  resize: none;
   border-radius: 15px;
+  resize: none;
 `;
 
 export const BtnWrap = styled.div`

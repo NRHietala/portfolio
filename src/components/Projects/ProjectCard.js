@@ -42,7 +42,12 @@ const ProjectCard = props => {
         <FrontSide>
           <ProjectsIcon src={image} alt="project screenshot" />
           <ProjectsH2>{title}</ProjectsH2>
-          <RepoLink href={repoLink} target="_blank" aria-label={repoLabel}>
+          <RepoLink
+            href={repoLink}
+            target="_blank"
+            aria-label={repoLabel}
+            rel="noopener noreferrer"
+          >
             GitHub Repo
           </RepoLink>
           <ProjectsP>{frontText}</ProjectsP>

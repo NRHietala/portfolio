@@ -67,7 +67,8 @@ export const TopLine = styled.p`
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
-  margin-bottom: 16px;
+  line-height: 1.3;
+  padding: 5px;
 `;
 
 export const Heading = styled.h1`
@@ -85,7 +86,6 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 600px;
-  margin-bottom: 15px;
   font-size: 18px;
   line-height: 24px;
 
@@ -114,8 +114,8 @@ export const Img = styled.img`
 
 export const ContactWrap = styled.div`
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   text-align: center;
   padding: 10px 0px;
@@ -130,10 +130,42 @@ export const ContactIcons = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 `;
 
 export const ContactIconLink = styled.a`
   color: ${props => props.theme.subText};
   font-size: 30px;
-  padding: 0px 5px;
+  padding: 0px 10px;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: unset;
+  }
+`;
+
+export const Btn = styled.a`
+  display: block;
+  background: ${props => props.theme.primary};
+  color: ${props => props.theme.bgColor};
+  border-radius: 50px;
+  white-space: nowrap;
+  font-size: 16px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: ${props => props.theme.subText};
+  }
 `;

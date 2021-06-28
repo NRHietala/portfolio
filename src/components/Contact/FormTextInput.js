@@ -7,13 +7,13 @@ const FormTextInput = props => {
     <>
       <FormInputLabel htmlFor={name}>
         <span>{label}:</span>
+        <FormInput
+          type={type}
+          name={name}
+          required={required}
+          placeholder={placeholder}
+        />
       </FormInputLabel>
-      <FormInput
-        type={type}
-        name={name}
-        required={required}
-        placeholder={placeholder}
-      />
     </>
   );
 };
