@@ -55,11 +55,11 @@ export const SidebarLink = styled(LinkS)`
   list-style: none;
   transition: 0.2s ease-in-out;
   text-decoration: none;
-  color: #fff;
+  color: ${props => props.theme.subText};
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: ${props => props.theme.primary};
     transition: 0.2s ease-in-out;
   }
 `;
@@ -71,10 +71,10 @@ export const SideBtnWrap = styled.div`
 
 export const SidebarRoute = styled.a`
   border-radius: 50px;
-  background: #01bf71;
+  background: ${props => props.theme.primary};
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: ${props => props.theme.bgColor};
   font-size: 16px;
   outline: none;
   border: none;
@@ -85,6 +85,5 @@ export const SidebarRoute = styled.a`
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
   }
 `;

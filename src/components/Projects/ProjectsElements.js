@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background: ${props => props.theme.bgColor};
   padding-top: 50px;
 
   @media screen and (max-width: 768px) {
@@ -70,7 +70,7 @@ export const ProjectsIcon = styled.img`
 
 export const ProjectsH1 = styled.h1`
   font-size: 2.5rem;
-  color: #ef0195;
+  color: ${props => props.theme.secondary};
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -82,14 +82,14 @@ export const ProjectsH1 = styled.h1`
 export const ProjectsH2 = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #ef0195;
+  color: ${props => props.theme.secondary};
   white-space: pre-line;
 `;
 
 export const Subtitle = styled.h2`
   font-size: 1rem;
   margin-bottom: 10px;
-  color: #40e0d0;
+  color: ${props => props.theme.primary};
 
   @media screen and (max-width: 480px) {
     font-size: 0.9rem;
@@ -99,7 +99,7 @@ export const Subtitle = styled.h2`
 export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
-  color: #fff;
+  color: ${props => props.theme.subText};
   white-space: pre-line;
   padding: 10px 0px;
 
@@ -117,15 +117,15 @@ export const FrontSide = styled.div`
 `;
 
 export const RepoLink = styled.a`
-  color: #40e0d0;
+  color: ${props => props.theme.primary};
   text-decoration: none;
   padding: 6px 15px;
   border-radius: 50px;
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: white;
-    color: #010606;
+    background: ${props => props.theme.subText};
+    color: ${props => props.theme.bgColor};
   }
 `;
 
@@ -145,10 +145,10 @@ export const BtnWrap = styled.div`
 
 export const Btn = styled.button`
   border-radius: 50px;
-  background: #40e0d0;
+  background: ${props => props.theme.primary};
   white-space: nowrap;
   padding: 10px 20px;
-  color: #000;
+  color: ${props => props.theme.bgColor};
   font-size: 16px;
   outline: none;
   border: none;
@@ -158,7 +158,6 @@ export const Btn = styled.button`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: white;
-    color: #010606;
+    background: ${props => props.theme.subText};
   }
 `;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +8,6 @@ export const HeroContainer = styled.div`
   height: 100vh;
   position: relative;
   z-index: 1;
-  background: #0c0c0c;
 `;
 
 export const HeroBg = styled.div`
@@ -27,7 +26,6 @@ export const VideoBg = styled.video`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
   filter: brightness(50%);
 `;
 
@@ -43,7 +41,7 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: #fff;
+  color: ${props => props.theme.primary};
   font-size: 40px;
   text-align: center;
   letter-spacing: 2px;
@@ -63,18 +61,21 @@ export const ImgWrap = styled.div`
   align-content: center;
   max-width: 500px;
   max-height: 500px;
-  height: 80%;
+  height: 100%;
   margin: 10px;
 `;
 
 export const Img = styled.img`
-  width: 60%;
+  height: 90%;
+  width: 90%;
+  max-width: 360px;
+  max-height: 400px;
   border-radius: 50%;
 `;
 
 export const HeroP = styled.p`
   margin-top: 24px;
-  color: #fff;
+  color: ${props => props.theme.subText};
   font-size: 24px;
   text-align: center;
   max-width: 800px;
@@ -95,7 +96,6 @@ export const TypeWrap = styled.div`
   align-items: center;
   text-align: center;
   margin-top: 24px;
-  color: #fff;
   font-size: 24px;
   text-align: center;
   max-width: 600px;

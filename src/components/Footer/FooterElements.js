@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #101522;
+  background: ${props => props.theme.bgFooter};
 `;
 
 export const FooterWrap = styled.div`
@@ -36,7 +36,7 @@ export const ContactLogo = styled(Link)`
   display: flex;
   justify-self: flex-start;
   align-items: center;
-  color: #40e0d0;
+  color: ${props => props.theme.primary};
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
@@ -46,7 +46,7 @@ export const ContactLogo = styled(Link)`
 `;
 
 export const WebRights = styled.small`
-  color: #fff;
+  color: ${props => props.theme.subText};
   margin-bottom: 16px;
 `;
 
@@ -57,7 +57,7 @@ export const ContactIcons = styled.div`
 `;
 
 export const ContactIconLink = styled.a`
-  color: #fff;
+  color: ${props => props.theme.subText};
   padding: 0px 5px;
   font-size: 24px;
 `;

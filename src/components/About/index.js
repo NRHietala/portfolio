@@ -17,6 +17,8 @@ import {
   ContactWrap,
   ContactIcons,
   ContactIconLink,
+  BtnWrap,
+  Btn,
 } from "./AboutElements";
 
 const About = () => {
@@ -27,7 +29,6 @@ const About = () => {
           <AboutRow>
             <Column1>
               <TextWrapper>
-                <TopLine>Who Am I?</TopLine>
                 <Heading className="lobster-font">Nathan Hietala</Heading>
                 <Subtitle>
                   Who am I? All philosophical arguments aside, I'm presently a
@@ -42,19 +43,30 @@ const About = () => {
                   <ContactIconLink
                     href="//www.linkedin.com/in/nrhietala/"
                     target="_blank"
-                    aria-label="LinkedIn"
+                    aria-label="LinkedIn link"
+                    rel="noopener noreferrer"
                   >
                     <FaLinkedin />
                   </ContactIconLink>
-
                   <ContactIconLink
                     href="//www.github.com/nrhietala"
                     target="_blank"
-                    aria-label="Github"
+                    aria-label="Github link"
+                    rel="noopener noreferrer"
                   >
                     <FaGithub />
                   </ContactIconLink>
                 </ContactIcons>
+                <BtnWrap>
+                  <Btn
+                    href="https://drive.google.com/file/d/16bc6w74QgC_ybLyOJor5jdaT_K-P5Dtj/view?usp=sharing"
+                    target="_blank"
+                    aria-label="resume link"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </Btn>
+                </BtnWrap>
               </ContactWrap>
             </Column1>
             <Column2>

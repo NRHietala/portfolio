@@ -32,14 +32,16 @@ const Footer = () => {
               <ContactIconLink
                 href="//www.linkedin.com/in/nrhietala/"
                 target="_blank"
-                aria-label="LinkedIn"
+                aria-label="LinkedIn link"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
               </ContactIconLink>
               <ContactIconLink
                 href="//www.github.com/nrhietala"
                 target="_blank"
-                aria-label="Github"
+                aria-label="Github link"
+                rel="noopener noreferrer"
               >
                 <FaGithub />
               </ContactIconLink>

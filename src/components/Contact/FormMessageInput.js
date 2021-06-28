@@ -5,16 +5,16 @@ const FormInput = props => {
   const { label, name, required } = props;
   return (
     <>
-      <FormInputLabel htmlFor={label}>
+      <FormInputLabel htmlFor={name}>
         <span>{label}:</span>
+        <FormMessageInput
+          required={required}
+          name={name}
+          rows={3}
+          cols={4}
+          maxLength={295}
+        />
       </FormInputLabel>
-      <FormMessageInput
-        required={required}
-        name={name}
-        rows={3}
-        cols={4}
-        maxLength={295}
-      />
     </>
   );
 };

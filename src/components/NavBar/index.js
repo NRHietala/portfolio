@@ -96,7 +96,9 @@ const NavBar = ({ toggleMenu }) => {
             <NavBtn>
               <NavBtnLink
                 href="https://drive.google.com/file/d/16bc6w74QgC_ybLyOJor5jdaT_K-P5Dtj/view?usp=sharing"
+                aria-label="resume link"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Resume
               </NavBtnLink>

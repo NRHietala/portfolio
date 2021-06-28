@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const SkillsContainer = styled.section`
-  color: #fff;
-  background: #010606;
+  color: ${props => props.theme.subText};
+  background: ${props => props.theme.bgColor};
   min-height: 500px;
   max-height: 900px;
 
@@ -26,17 +26,18 @@ export const SkillsWrapper = styled.div`
   padding: 50px 24px 10px 24px;
 `;
 
-export const SkillsCardContainer = styled.div`
+export const SkillsCardContainer = styled.ul`
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: flex-start;
   width: 100%;
+  max-width: 1500px;
   padding: 0px 24px;
 `;
 
 export const SkillH2 = styled.h2`
-  color: #ef0195;
+  color: ${props => props.theme.secondary};
   font-size: 2.5rem;
   text-align: center;
   padding: 10px 0px;
@@ -52,7 +53,8 @@ export const SkillH2 = styled.h2`
 
 ///////////////// SkillCard Style Elements /////////////////
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.li`
+  list-style-type: none;
   width: 250px;
   padding: 20px;
 `;
@@ -61,7 +63,7 @@ export const CardWrapper = styled.div``;
 
 export const Title = styled.h3`
   text-align: center;
-  color: #40e0d0;
+  color: ${props => props.theme.primary};
   font-size: 28px;
   padding: 4px 7px;
 
@@ -70,8 +72,7 @@ export const Title = styled.h3`
   }
 `;
 
-export const Skill = styled.li`
-  list-style-type: none;
+export const Skill = styled.p`
   text-align: center;
   font-size: 18px;
   padding: 3px;

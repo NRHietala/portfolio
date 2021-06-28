@@ -35,6 +35,8 @@ const Sidebar = ({ isOpen, toggleMenu }) => {
           <SidebarRoute
             href="https://drive.google.com/file/d/16bc6w74QgC_ybLyOJor5jdaT_K-P5Dtj/view?usp=sharing"
             target="_blank"
+            aria-label="resume link"
+            rel="noopener noreferrer"
           >
             Resume
           </SidebarRoute>

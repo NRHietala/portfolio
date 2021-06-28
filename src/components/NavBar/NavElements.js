@@ -33,7 +33,7 @@ export const NavLogo = styled(LinkR)`
   display: flex;
   align-items: center;
   justify-self: flex-start;
-  color: #40e0d0;
+  color: ${props => props.theme.primary};
   font-size: 1.5rem;
   margin-left: 24px;
   font-weight: bold;
@@ -53,7 +53,7 @@ export const MobileMenu = styled.div`
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: white;
+    color: ${props => props.theme.subText};
   }
 `;
 
@@ -77,17 +77,21 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #fff;
+  color: ${props => props.theme.subText};
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
 
+  &:hover {
+    color: ${props => props.theme.primary};
+  }
+
   &.active {
-    border-bottom: 3px solid #ef0195;
+    border-bottom: 3px solid ${props => props.theme.secondary};
   }
 `;
 
-export const NavBtn = styled.nav`
+export const NavBtn = styled.div`
   display: flex;
   align-items: center;
 
@@ -98,10 +102,10 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled.a`
   border-radius: 50px;
-  background: #40e0d0;
+  background: ${props => props.theme.primary};
   white-space: nowrap;
   padding: 10px 22px;
-  color: #000;
+  color: ${props => props.theme.bgColor};
   font-size: 16px;
   outline: none;
   border: none;
@@ -111,7 +115,6 @@ export const NavBtnLink = styled.a`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: white;
-    color: #010606;
+    background: ${props => props.theme.subText};
   }
 `;

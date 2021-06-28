@@ -40,14 +40,19 @@ const ProjectCard = props => {
     <Card onMouseOver={handleMouseHover}>
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         <FrontSide>
-          <ProjectsIcon src={image} />
+          <ProjectsIcon src={image} alt="project screenshot" />
           <ProjectsH2>{title}</ProjectsH2>
-          <RepoLink href={repoLink} target="_blank" aria-label={repoLabel}>
+          <RepoLink
+            href={repoLink}
+            target="_blank"
+            aria-label={repoLabel}
+            rel="noopener noreferrer"
+          >
             GitHub Repo
           </RepoLink>
           <ProjectsP>{frontText}</ProjectsP>
           <BtnWrap>
-            <Btn onClick={handleClick}>Details</Btn>
+            <Btn onClick={handleClick}>Click for Details</Btn>
           </BtnWrap>
         </FrontSide>
         <BackSide>
