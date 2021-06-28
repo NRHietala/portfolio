@@ -22,7 +22,7 @@ const Hero = () => {
       <HeroContent>
         <ImgWrap>
           <Img
-            src={process.env.PUBLIC_URL$ + "/tinypic.jpg"}
+            src={process.env.PUBLIC_URL + "/tinypic.jpg"}
             alt="nathan hietala"
           />
         </ImgWrap>
