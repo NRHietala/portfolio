@@ -59,7 +59,7 @@ const About = () => {
                 </ContactIcons>
                 <BtnWrap>
                   <Btn
-                    href="https://drive.google.com/file/d/16bc6w74QgC_ybLyOJor5jdaT_K-P5Dtj/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1gpHT_yp3q7gtsW5ocn7GAItCioCC4Nsz/view?usp=sharing"
                     target="_blank"
                     aria-label="resume link"
                     rel="noopener noreferrer"
