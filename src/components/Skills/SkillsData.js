@@ -7,11 +7,11 @@ export const FrontEnd = {
 export const BackEnd = {
   id: "backend",
   title: "Back End",
-  tech: ["Node", "Express", "SQL", "Postgres"],
+  tech: ["Node", "Express", "Knex", "PostgreSQL", "RESTful APIs"],
 };
 
 export const Tools = {
   id: "tools",
   title: "Tools",
-  tech: ["Git", "GitHub", "Postman", "VScode", "Netlify", "Heroku"],
+  tech: ["Git", "GitHub", "VScode", "Postman", "Netlify", "Heroku"],
 };
