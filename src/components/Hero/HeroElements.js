@@ -68,7 +68,7 @@ export const ImgWrap = styled.div`
 export const Img = styled.img`
   height: 90%;
   width: 90%;
-  max-width: 360px;
+  max-width: 400px;
   max-height: 400px;
   border-radius: 50%;
 `;
